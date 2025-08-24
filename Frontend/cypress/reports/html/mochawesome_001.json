@@ -1,0 +1,201 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-06-27T09:57:33.000Z",
+    "end": "2025-06-27T09:57:35.341Z",
+    "duration": 2341,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "701ea4e5-2558-4601-9dbf-68a146c1e2d6",
+      "title": "",
+      "fullFile": "cypress/e2e/footer.cy.js",
+      "file": "cypress/e2e/footer.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f1586a72-09e9-48db-bae8-6c6aa7e04660",
+          "title": "Footer Component",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should render all social media icons",
+              "fullTitle": "Footer Component should render all social media icons",
+              "timedOut": null,
+              "duration": 1077,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.footer-social-row a').should('have.length', 5);\ncy.get('.footer-social-row').within(() => {\n  cy.get('a[aria-label=\"Facebook\"]').should('exist');\n  cy.get('a[aria-label=\"Instagram\"]').should('exist');\n  cy.get('a[aria-label=\"Twitter\"]').should('exist');\n  cy.get('a[aria-label=\"YouTube\"]').should('exist');\n  cy.get('a[aria-label=\"LinkedIn\"]').should('exist');\n});",
+              "err": {},
+              "uuid": "109426d0-b61c-4b0c-82c0-71216b6142bb",
+              "parentUUID": "f1586a72-09e9-48db-bae8-6c6aa7e04660",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should render all 3 footer columns",
+              "fullTitle": "Footer Component should render all 3 footer columns",
+              "timedOut": null,
+              "duration": 241,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.footer-main .footer-col').should('have.length', 3);",
+              "err": {},
+              "uuid": "d1878245-ba17-43f2-8c08-b9b94b28e4a8",
+              "parentUUID": "f1586a72-09e9-48db-bae8-6c6aa7e04660",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should list all Useful Links items",
+              "fullTitle": "Footer Component should list all Useful Links items",
+              "timedOut": null,
+              "duration": 231,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.footer-col').eq(0).within(() => {\n  cy.contains('Useful Links').should('exist');\n  const links = ['Hire us', 'Who we are', 'How we work', 'Book Luxury Interior Designer', 'Interior Cost Calculator', 'Contact us', 'Refer a friend', 'FAQs'];\n  links.forEach(text => cy.contains(text).should('exist'));\n});",
+              "err": {},
+              "uuid": "807cfa65-077e-425d-88ec-1babc77ada24",
+              "parentUUID": "f1586a72-09e9-48db-bae8-6c6aa7e04660",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should list all Company Support items",
+              "fullTitle": "Footer Component should list all Company Support items",
+              "timedOut": null,
+              "duration": 241,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.footer-col').eq(1).within(() => {\n  cy.contains('Company Support').should('exist');\n  const policies = ['Privacy Policy', 'Payment Policy', 'Refund, Return Policy & Delay Penalties', 'Cancellation Policy', 'Warranty Policy', 'Terms & Conditions'];\n  policies.forEach(text => cy.contains(text).should('exist'));\n});",
+              "err": {},
+              "uuid": "63a0925b-40f8-45ff-bddb-1284b1cee367",
+              "parentUUID": "f1586a72-09e9-48db-bae8-6c6aa7e04660",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display all address blocks with titles",
+              "fullTitle": "Footer Component should display all address blocks with titles",
+              "timedOut": null,
+              "duration": 186,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const addressTitles = ['Registered Address', 'Whitefield Design Centre', 'HSR Layout Design Centre'];\ncy.get('.footer-col').eq(2).within(() => {\n  addressTitles.forEach(title => cy.contains('.footer-address-title', title).should('exist'));\n});",
+              "err": {},
+              "uuid": "18560a34-7eff-4be5-9b18-8d3bafcefa23",
+              "parentUUID": "f1586a72-09e9-48db-bae8-6c6aa7e04660",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display the correct copyright text",
+              "fullTitle": "Footer Component should display the correct copyright text",
+              "timedOut": null,
+              "duration": 176,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.footer-root').contains('Copyright © 2025 - JustFurnishIt').should('be.visible');",
+              "err": {},
+              "uuid": "5cf03167-a5fb-451d-aa3f-d1f53770e65f",
+              "parentUUID": "f1586a72-09e9-48db-bae8-6c6aa7e04660",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "109426d0-b61c-4b0c-82c0-71216b6142bb",
+            "d1878245-ba17-43f2-8c08-b9b94b28e4a8",
+            "807cfa65-077e-425d-88ec-1babc77ada24",
+            "63a0925b-40f8-45ff-bddb-1284b1cee367",
+            "18560a34-7eff-4be5-9b18-8d3bafcefa23",
+            "5cf03167-a5fb-451d-aa3f-d1f53770e65f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2152,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/html",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

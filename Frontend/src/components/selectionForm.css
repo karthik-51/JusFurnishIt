@@ -1,0 +1,209 @@
+body {
+  background: #f9fafb;
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, "Liberation Sans",
+    sans-serif;
+}
+
+/* Headings */
+.form-heading {
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: #2a2d34;
+  margin-top: 2rem;
+  margin-bottom: 0.2rem;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+.form-subheading {
+  color: #6d758d;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.02rem;
+  font-weight: 400;
+}
+
+/* Search bar */
+.search-bar-container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto 1.5rem auto;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.7rem 2.5rem 0.7rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #d8dbe2;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 2px 8px 0 rgba(60, 60, 110, 0.03);
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  color: #32343a;
+}
+
+.search-input:focus {
+  border-color: #bebebe;
+  box-shadow: 0 2px 12px 0 rgba(110, 110, 180, 0.08);
+}
+
+.search-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #b0b0b0;
+  font-size: 1.35rem;
+  pointer-events: none;
+}
+
+/* Categories row: vertical layout */
+.categories-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.7rem;
+  margin: 0 auto 1.5rem auto;
+  width: 100%;
+  max-width: 900px;
+}
+
+.category-section {
+  width: 100%;
+}
+
+/* CHECKBOX GROUPS: horizontal, wrap if needed */
+.checkbox-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.98rem;
+  color: #4b4e57;
+  cursor: pointer;
+  font-weight: 400;
+  background: #f3f4f6;
+  padding: 0.18rem 0.7rem 0.18rem 0.4rem;
+  border-radius: 4px;
+  transition: background 0.18s, color 0.18s;
+}
+
+.checkbox-label:hover {
+  color: #1f2937;
+  background: #e7edfa;
+}
+
+.checkbox-input {
+  accent-color: #1f2937;
+  width: 1em;
+  height: 1em;
+  border-radius: 3px;
+  border: 1px solid #bbb;
+  margin-right: 0.2em;
+  transition: border 0.2s;
+}
+
+.checkbox-input:focus {
+  outline: 2px solid #6f7798;
+}
+
+/* SMALL, CENTERED BUTTON */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+  .categories-row {
+    max-width: 99vw;
+  }
+  .category-section {
+    width: 100%;
+  }
+  .checkbox-group {
+    gap: 0.6rem 0.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-heading {
+    font-size: 1.13rem;
+  }
+  .search-bar-container {
+    max-width: 98vw;
+  }
+  .categories-row {
+    gap: 1.2rem;
+  }
+}
+
+.next-btn {
+  background-color: transparent; /* transparent background */
+  border: 2px solid #1f2937; /* 1px solid border with your color */
+  color: #1f2937; /* text color same as border */
+  font-size: 0.97rem;
+  font-weight: 600;
+  padding: 0.38rem 1.2rem;
+  border-radius: 18px;
+  box-shadow: none; /* remove shadow for clean look */
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease, color 0.3s ease;
+  min-width: 90px;
+  max-width: 200px;
+  letter-spacing: 0.02em;
+}
+
+/* Optional: hover effect with slight background and text color change */
+.next-btn:hover {
+  background-color: #1f2937; /* dark background on hover */
+  color: #fff; /* white text on hover */
+  opacity: 0.9;
+}
+
+.next-btn:hover {
+  opacity: 0.75;
+}
+
+.section-title {
+  color: #1f2937;
+  font-size: 1.03rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  letter-spacing: 0.01em;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.7rem 2.5rem 0.7rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #d8dbe2;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.13); /* semi-transparent black */
+  color: #111; /* black input text */
+  box-shadow: 0 2px 8px 0 rgba(60, 60, 110, 0.03);
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.search-input::placeholder {
+  color: #333; /* dark placeholder for better contrast */
+  opacity: 0.7;
+}
+
+.search-input:focus {
+  box-shadow: 0 2px 12px 0 rgba(110, 110, 180, 0.08);
+  background: rgba(0, 0, 0, 0.19); /* slightly darker on focus */
+  color: #111;
+}

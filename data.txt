@@ -1,0 +1,112 @@
+ 
+INSERT INTO user (id, full_name, email, password, role) VALUES (101, 'Karthik', 'karthik@mail.com', 'pass123', 'designer');
+INSERT INTO user (id, full_name, email, password, role) VALUES (102, 'Chiranth', 'chiranth@mail.com', 'pass123', 'designer');
+INSERT INTO user (id, full_name, email, password, role) VALUES (103, 'Sneha', 'sneha@mail.com', 'pass123', 'designer');
+INSERT INTO user (id, full_name, email, password, role) VALUES (104, 'Simran', 'simran@mail.com', 'pass123', 'designer');
+INSERT INTO user (id, full_name, email, password, role) VALUES (105, 'Meera', 'meera@mail.com', 'pass123', 'designer');
+INSERT INTO user (id, full_name, email, password, role) VALUES (106, 'Ravi', 'ravi@mail.com', 'pass123', 'designer');
+INSERT INTO user (id, full_name, email, password, role) VALUES (107, 'Ishaan', 'ishaan@mail.com', 'pass123', 'designer');
+INSERT INTO user (id, full_name, email, password, role) VALUES (108, 'Tanya', 'tanya@mail.com', 'pass123', 'designer');
+INSERT INTO user (id, full_name, email, password, role) VALUES (109, 'Arjun', 'arjun@mail.com', 'pass123', 'designer');
+INSERT INTO user (id, full_name, email, password, role) VALUES (110, 'Aditi', 'aditi@mail.com', 'pass123', 'designer');
+
+INSERT INTO user (id, full_name, email, password, role) VALUES (111, 'Ananya', 'ananya@mail.com', 'pass123', 'user');
+INSERT INTO user (id, full_name, email, password, role) VALUES (112, 'Dev Sharma', 'dev@mail.com', 'pass123', 'user');
+INSERT INTO user (id, full_name, email, password, role) VALUES (113, 'Ishita Jain', 'ishita@mail.com', 'pass123', 'user');
+INSERT INTO user (id, full_name, email, password, role) VALUES (114, 'Arjun Menon', 'menon@mail.com', 'pass123', 'user');
+INSERT INTO user (id, full_name, email, password, role) VALUES (115, 'Neha Verma', 'neha@mail.com', 'pass123', 'user');
+INSERT INTO user (id, full_name, email, password, role) VALUES (116, 'Rohan Joshi', 'rohan@mail.com', 'pass123', 'user');
+INSERT INTO user (id, full_name, email, password, role) VALUES (117, 'Kavya Nair', 'kavya@mail.com', 'pass123', 'user');
+INSERT INTO user (id, full_name, email, password, role) VALUES (118, 'Aditya Rao', 'aditya@mail.com', 'pass123', 'user');
+INSERT INTO user (id, full_name, email, password, role) VALUES (119, 'Shruti Patel', 'shruti@mail.com', 'pass123', 'user');
+INSERT INTO user (id, full_name, email, password, role) VALUES (120, 'Vedant Shah', 'vedant@mail.com', 'pass123', 'user');
+
+
+INSERT INTO designer_profiles (user_id, description, experience, location, name) VALUES (101, 'Expert in layered textures and wooden modular decor.', '6', 'Mumbai, India', 'Karthik');
+INSERT INTO designer_profiles (user_id, description, experience, location, name) VALUES (102, 'Combines modern minimalism with eco-friendly materials.', '5', 'Bangalore, India', 'Chiranth');
+INSERT INTO designer_profiles (user_id, description, experience, location, name) VALUES (103, 'Specializes in Scandinavian wooden furniture styles.', '8', 'Delhi, India', 'Sneha');
+INSERT INTO designer_profiles (user_id, description, experience, location, name) VALUES (104, 'Vibrant painter with flair for abstract wall designs.', '7', 'Chandigarh, India', 'Simran');
+INSERT INTO designer_profiles (user_id, description, experience, location, name) VALUES (105, 'Creates cozy spaces with bold color palettes and lights.', '9', 'Pune, India', 'Meera');
+INSERT INTO designer_profiles (user_id, description, experience, location, name) VALUES (106, 'Known for smart kitchen and bathroom makeovers.', '4', 'Kolkata, India', 'Ravi');
+INSERT INTO designer_profiles (user_id, description, experience, location, name) VALUES (107, 'Functional minimalist style with a tech twist.', '6', 'Chennai, India', 'Ishaan');
+INSERT INTO designer_profiles (user_id, description, experience, location, name) VALUES (108, 'Elegant bedroom themes with handmade fabrics and textures.', '3', 'Jaipur, India', 'Tanya');
+INSERT INTO designer_profiles (user_id, description, experience, location, name) VALUES (109, 'Rustic meets modern — expert in balcony and lounge concepts.', '10', 'Hyderabad, India', 'Arjun');
+INSERT INTO designer_profiles (user_id, description, experience, location, name) VALUES (110, 'Designs warm, family-friendly dining and living room spaces.', '6', 'Ahmedabad, India', 'Aditi');
+
+INSERT INTO designs (id, bio, category, description, estimated_cost, image, theme, user_id) VALUES
+(201, 'Abstract and modern art painting curator.', 'Living Room', 'Versatile furniture designer.', 13000, 'https://example.com/design1.jpg', 'Artistic', 101),
+(202, 'Urban-themed furniture specialist.', 'Kitchen', 'Modern kitchen styles.', 16000, 'https://example.com/design2.jpg', 'Minimalist', 102),
+(203, 'Textures and lighting expert.', 'Wall designs', 'Compact decor solutions.', 19000, 'https://example.com/design3.jpg', 'Vintage', 103),
+(204, 'Minimalist space design expert.', 'Bedroom', 'Calm bedroom palettes.', 22000, 'https://example.com/design4.jpg', 'Modern', 104),
+(205, 'Rustic wooden decor designer.', 'Dining Hall', 'Wood-centric furniture.', 25000, 'https://example.com/design5.jpg', 'Eco-Friendly', 105),
+(206, 'Contemporary abstract designer.', 'Bathroom', 'Bold tile and fittings.', 28000, 'https://example.com/design6.jpg', 'Artistic', 106),
+(207, 'Natural materials expert.', 'Balcony', 'Balcony garden setups.', 31000, 'https://example.com/design7.jpg', 'Minimalist', 107),
+(208, 'Bold color specialist.', 'Living Room', 'Vivid and expressive.', 34000, 'https://example.com/design8.jpg', 'Vintage', 108),
+(209, 'Functional spatial design.', 'Bedroom', 'Dual-purpose furniture.', 37000, 'https://example.com/design9.jpg', 'Modern', 109),
+(210, 'Hand-painted wall artist.', 'Wall designs', 'Textured strokes.', 40000, 'https://example.com/design10.jpg', 'Eco-Friendly', 110);
+
+
+INSERT INTO products (id, category, description, image, price, short_bio, theme, user_id) VALUES
+(301, 'sofa', 'Comfortable and stylish.', 'https://example.com/product1.jpg', 2500, 'Modern artistic flair.', 'Artistic', 101),
+(302, 'TV', 'Smart 4K UHD.', 'https://example.com/product2.jpg', 3000, 'Compact tech design.', 'Minimalist', 102),
+(303, 'Tables', 'Wooden center table.', 'https://example.com/product3.jpg', 3500, 'Solid build quality.', 'Vintage', 103),
+(304, 'Carpets', 'Hand-woven rug.', 'https://example.com/product4.jpg', 4000, 'Soft natural fibers.', 'Modern', 104),
+(305, 'curtains', 'Blackout drapes.', 'https://example.com/product5.jpg', 4500, 'Elegant patterns.', 'Eco-Friendly', 105),
+(306, 'bed', 'Queen size bed.', 'https://example.com/product6.jpg', 5000, 'Natural wood frame.', 'Artistic', 106),
+(307, 'sofa', 'L-shaped leather.', 'https://example.com/product7.jpg', 5500, 'Urban seating style.', 'Minimalist', 107),
+(308, 'TV', 'Wall-mounted screen.', 'https://example.com/product8.jpg', 6000, 'Slim profile.', 'Vintage', 108),
+(309, 'Tables', 'Dining table.', 'https://example.com/product9.jpg', 6500, 'Premium wood.', 'Modern', 109),
+(310, 'Carpets', 'Patterned carpet.', 'https://example.com/product10.jpg', 7000, 'Colorful detail.', 'Eco-Friendly', 110);
+
+
+INSERT INTO ratings (id, design_id, product_id, rating, review, user_id) VALUES
+(401, 201, 301, 5, 'Excellent product!', 111),
+(402, 202, 302, 4, 'Looks great!', 112),
+(403, 203, 303, 3, 'Good value.', 113),
+(404, 204, 304, 5, 'Loved the design!', 114),
+(405, 205, 305, 4, 'Stylish and useful.', 115),
+(406, 206, 306, 2, 'Expected better.', 116),
+(407, 207, 307, 3, 'Nice quality.', 117),
+(408, 208, 308, 5, 'Highly recommended.', 118),
+(409, 209, 309, 4, 'Very comfortable.', 119),
+(410, 210, 310, 5, 'Awesome finishing.', 120);
+
+
+INSERT INTO bookings (id, product_id, status, user_id) VALUES
+(501, 301, 'confirmed', 111),
+(502, 302, 'pending', 112),
+(503, 303, 'cancelled', 113),
+(504, 304, 'confirmed', 114),
+(505, 305, 'pending', 115),
+(506, 306, 'confirmed', 116),
+(507, 307, 'cancelled', 117),
+(508, 308, 'pending', 118),
+(509, 309, 'confirmed', 119),
+(510, 310, 'cancelled', 120);
+
+
+INSERT INTO cart_items (id, product_id, quantity, user_id) VALUES
+(601, 301, 1, 111),
+(602, 302, 2, 112),
+(603, 303, 1, 113),
+(604, 304, 3, 114),
+(605, 305, 2, 115),
+(606, 306, 1, 116),
+(607, 307, 4, 117),
+(608, 308, 1, 118),
+(609, 309, 2, 119),
+(610, 310, 3, 120);
+
+
+INSERT INTO wishlist_items (id, item_id, item_type, user_id) VALUES
+(701, 201, 'design', 111),
+(702, 302, 'product', 112),
+(703, 203, 'design', 113),
+(704, 304, 'product', 114),
+(705, 205, 'design', 115),
+(706, 306, 'product', 116),
+(707, 207, 'design', 117),
+(708, 308, 'product', 118),
+(709, 209, 'design', 119),
+(710, 310, 'product', 120);
+

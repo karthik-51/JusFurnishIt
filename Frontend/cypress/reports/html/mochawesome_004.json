@@ -1,0 +1,182 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-06-27T09:57:46.149Z",
+    "end": "2025-06-27T09:57:47.977Z",
+    "duration": 1828,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1a899abb-8a10-4d15-9d56-2a568c715aa2",
+      "title": "",
+      "fullFile": "cypress/e2e/reviewSection.cy.js",
+      "file": "cypress/e2e/reviewSection.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "82048c55-22e7-42c6-a8e6-4d470c46f035",
+          "title": "ReviewSection Component",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should render the section title",
+              "fullTitle": "ReviewSection Component should render the section title",
+              "timedOut": null,
+              "duration": 880,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('A Word From Our Customers').should('be.visible');",
+              "err": {},
+              "uuid": "0a1c40de-8dcf-4678-81a6-d412b8b5ba46",
+              "parentUUID": "82048c55-22e7-42c6-a8e6-4d470c46f035",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should render three review cards",
+              "fullTitle": "ReviewSection Component should render three review cards",
+              "timedOut": null,
+              "duration": 227,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.carousel-card').should('have.length', 3);",
+              "err": {},
+              "uuid": "cfa6be94-e922-4a14-9c99-d3ac78a69c49",
+              "parentUUID": "82048c55-22e7-42c6-a8e6-4d470c46f035",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should highlight the center card differently",
+              "fullTitle": "ReviewSection Component should highlight the center card differently",
+              "timedOut": null,
+              "duration": 185,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.carousel-card.center').should('exist');\ncy.get('.carousel-card.side').should('have.length', 2);",
+              "err": {},
+              "uuid": "f281de0e-a05e-4430-86b7-ede9ac8d635f",
+              "parentUUID": "82048c55-22e7-42c6-a8e6-4d470c46f035",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display name, role, review, designer, and rating on center card",
+              "fullTitle": "ReviewSection Component should display name, role, review, designer, and rating on center card",
+              "timedOut": null,
+              "duration": 205,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.carousel-card.center').within(() => {\n  cy.get('.card-name').should('exist').and('not.be.empty');\n  cy.get('.card-role').should('exist').and('not.be.empty');\n  cy.get('.card-review blockquote').should('exist').and('not.be.empty');\n  cy.get('.card-design').should('contain.text', 'Designed by');\n  cy.get('.card-stars').find('svg').should('have.length', 5);\n});",
+              "err": {},
+              "uuid": "ce3b240f-620e-44be-a076-62b899fccbe8",
+              "parentUUID": "82048c55-22e7-42c6-a8e6-4d470c46f035",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display correct number of filled stars for rating",
+              "fullTitle": "ReviewSection Component should display correct number of filled stars for rating",
+              "timedOut": null,
+              "duration": 175,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.carousel-card.center').within(() => {\n  cy.get('.card-stars svg').then($stars => {\n    const filledStars = $stars.filter((i, el) => el.getAttribute('color') === '#ffc107');\n    // rating should be 4 or 5, all reviews in your list are 4 or 5\n    expect(filledStars.length).to.be.within(4, 5);\n  });\n});",
+              "err": {},
+              "uuid": "93645115-0420-4a9c-bb8c-9eba938c8165",
+              "parentUUID": "82048c55-22e7-42c6-a8e6-4d470c46f035",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0a1c40de-8dcf-4678-81a6-d412b8b5ba46",
+            "cfa6be94-e922-4a14-9c99-d3ac78a69c49",
+            "f281de0e-a05e-4430-86b7-ede9ac8d635f",
+            "ce3b240f-620e-44be-a076-62b899fccbe8",
+            "93645115-0420-4a9c-bb8c-9eba938c8165"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1672,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/html",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-06-27T09:57:36.807Z",
+    "end": "2025-06-27T09:57:40.654Z",
+    "duration": 3847,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4123fe82-beac-4ead-8745-d9e2fff0a129",
+      "title": "",
+      "fullFile": "cypress/e2e/footerContact.cy.js",
+      "file": "cypress/e2e/footerContact.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "957043ed-6258-401b-abc2-da2de8fcaa95",
+          "title": "FooterContact Component",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display heading and description",
+              "fullTitle": "FooterContact Component should display heading and description",
+              "timedOut": null,
+              "duration": 959,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Contact Us').should('be.visible');\ncy.get('.footer-contact-desc').should('be.visible').and('contain.text', 'We’d love to hear from you!');",
+              "err": {},
+              "uuid": "1f7c2a8c-b4a9-4b2b-b2ab-ab504f77a3c3",
+              "parentUUID": "957043ed-6258-401b-abc2-da2de8fcaa95",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should show address, phone, and email information",
+              "fullTitle": "FooterContact Component should show address, phone, and email information",
+              "timedOut": null,
+              "duration": 315,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.footer-contact-item').should('have.length', 3);\ncy.contains('Address').should('exist');\ncy.contains('JustFurnishIt').should('exist');\ncy.contains('Phone').should('exist');\ncy.contains('561-456-2321').should('exist');\ncy.contains('Email').should('exist');\ncy.contains('justfurnishit@email.com').should('exist');",
+              "err": {},
+              "uuid": "7cad53ff-7093-4785-819a-3f011ff45220",
+              "parentUUID": "957043ed-6258-401b-abc2-da2de8fcaa95",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should render all contact form fields",
+              "fullTitle": "FooterContact Component should render all contact form fields",
+              "timedOut": null,
+              "duration": 189,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.footer-contact-form-box').within(() => {\n  cy.contains('Send Message').should('be.visible');\n  cy.get('input[type=\"text\"][placeholder=\"Full Name\"]').should('exist');\n  cy.get('input[type=\"email\"][placeholder=\"Email\"]').should('exist');\n  cy.get('input[type=\"tel\"]').should('exist');\n  cy.get('select').should('exist');\n  cy.get('textarea[placeholder=\"Type your Message...\"]').should('exist');\n  cy.get('button[type=\"submit\"]').should('contain.text', 'Send');\n});",
+              "err": {},
+              "uuid": "11ac35c7-323b-4d87-b672-2cc356e23151",
+              "parentUUID": "957043ed-6258-401b-abc2-da2de8fcaa95",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should validate required form fields on submit",
+              "fullTitle": "FooterContact Component should validate required form fields on submit",
+              "timedOut": null,
+              "duration": 273,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.footer-contact-form').within(() => {\n  cy.get('button[type=\"submit\"]').click();\n});\n// Optional: Check HTML5 native validation prevents form submission\ncy.get('input[required]:invalid').should('have.length.at.least', 1);",
+              "err": {},
+              "uuid": "294d98ed-3e18-47d2-8c95-26a094278656",
+              "parentUUID": "957043ed-6258-401b-abc2-da2de8fcaa95",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should allow filling and submitting the form",
+              "fullTitle": "FooterContact Component should allow filling and submitting the form",
+              "timedOut": null,
+              "duration": 1927,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.footer-contact-form').within(() => {\n  cy.get('input[type=\"text\"]').type('John Doe');\n  cy.get('input[type=\"email\"]').type('john@example.com');\n  cy.get('input[type=\"tel\"]').type('1234567890');\n  cy.get('select').select('Interior Design Service');\n  cy.get('textarea').type('I am interested in a modern interior design.');\n  cy.get('button[type=\"submit\"]').click();\n});\n// Optional: Add alert/message check if submission shows feedback",
+              "err": {},
+              "uuid": "ac9d3b6c-46e7-43b4-b85d-5f9010cf7508",
+              "parentUUID": "957043ed-6258-401b-abc2-da2de8fcaa95",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1f7c2a8c-b4a9-4b2b-b2ab-ab504f77a3c3",
+            "7cad53ff-7093-4785-819a-3f011ff45220",
+            "11ac35c7-323b-4d87-b672-2cc356e23151",
+            "294d98ed-3e18-47d2-8c95-26a094278656",
+            "ac9d3b6c-46e7-43b4-b85d-5f9010cf7508"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3663,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/html",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

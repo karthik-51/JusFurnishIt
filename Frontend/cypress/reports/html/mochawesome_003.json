@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-06-27T09:57:42.061Z",
+    "end": "2025-06-27T09:57:44.737Z",
+    "duration": 2676,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dbb81401-b728-40b0-a64f-a65f56944f14",
+      "title": "",
+      "fullFile": "cypress/e2e/home.cy.js",
+      "file": "cypress/e2e/home.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "346a53c7-932a-4746-ae36-1f79728c5094",
+          "title": "Home Page UI and Navigation Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should render the hero banner with correct image and quote",
+              "fullTitle": "Home Page UI and Navigation Tests should render the hero banner with correct image and quote",
+              "timedOut": null,
+              "duration": 933,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.hero-banner-sketch').should('have.css', 'background-image').and('include', 'http');\ncy.get('.hero-title').should('be.visible');\ncy.get('.hero-subtitle').should('be.visible');",
+              "err": {},
+              "uuid": "ea967f09-f7fb-4d4a-b692-3231ff8bd314",
+              "parentUUID": "346a53c7-932a-4746-ae36-1f79728c5094",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should render and navigate hero slides with arrow buttons",
+              "fullTitle": "Home Page UI and Navigation Tests should render and navigate hero slides with arrow buttons",
+              "timedOut": null,
+              "duration": 1432,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.hero-title').then($el => {\n  const initialTitle = $el.text();\n  cy.get('button.carousel-arrow.right').click();\n  cy.wait(500); // wait for state to update\n  cy.get('.hero-title').should($newEl => {\n    expect($newEl.text()).not.to.eq(initialTitle);\n  });\n  cy.get('button.carousel-arrow.left').click();\n  cy.wait(500);\n  cy.get('.hero-title').should('contain.text', initialTitle);\n});",
+              "err": {},
+              "uuid": "05be1bf2-ee57-471c-a542-77108768250b",
+              "parentUUID": "346a53c7-932a-4746-ae36-1f79728c5094",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should render AboutUs, ReviewSection, FooterContact, and Footer components",
+              "fullTitle": "Home Page UI and Navigation Tests should render AboutUs, ReviewSection, FooterContact, and Footer components",
+              "timedOut": null,
+              "duration": 204,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('About JustFurnishIt').should('exist');\ncy.contains('A Word From Our Customers').should('exist');\ncy.contains('Contact Us').should('exist');\ncy.contains('Useful Links').should('exist');",
+              "err": {},
+              "uuid": "0d31c6dc-fbaa-4ecd-9ce2-dc48edabac50",
+              "parentUUID": "346a53c7-932a-4746-ae36-1f79728c5094",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ea967f09-f7fb-4d4a-b692-3231ff8bd314",
+            "05be1bf2-ee57-471c-a542-77108768250b",
+            "0d31c6dc-fbaa-4ecd-9ce2-dc48edabac50"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2569,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/html",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

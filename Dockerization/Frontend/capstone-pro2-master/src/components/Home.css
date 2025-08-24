@@ -1,0 +1,124 @@
+/* Group for arrow and button */
+.arrow-btn-group {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  width: 60px; /* enough for arrow and button */
+}
+
+/* Left group: left edge, vertical center for arrow */
+.left-group {
+  left: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Right group: right edge, vertical center for arrow */
+.right-group {
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Arrow styling */
+.carousel-arrow {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 2px;
+  cursor: pointer;
+  opacity: 0.95;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  transition: color 0.2s, opacity 0.2s;
+  user-select: none;
+}
+.carousel-arrow:hover {
+  color: #ffd700;
+  opacity: 1;
+}
+
+/* Button styling */
+.hero-banner-sketch {
+  position: relative;
+  width: 100vw;
+  height: 88vh;
+  min-height: 480px;
+  background-size: cover; /* Ensures the image covers the area */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+}
+
+/* Shared button style */
+.discover-btn {
+  position: absolute;
+  bottom: 32px;
+  font-weight: 1000;
+  padding: 0.3rem 2.2rem;
+  padding-bottom: 1.5rem;
+  border-radius: 2rem;
+  border: white solid 2px;
+  background: none;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  z-index: 20;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.discover-btn.left {
+  left: 200px;
+  top: 50px;
+}
+
+.discover-btn.right {
+  right: 200px;
+  top: 50px;
+}
+
+.discover-btn:hover {
+  background: none;
+  color: #fff;
+}
+
+.full-bg-div {
+  background: none;
+  height: 100%;
+  width: 500%;
+}
+
+.hero-quote-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  max-width: 80vw;
+  z-index: 5;
+}
+
+.hero-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: 0.04em;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  letter-spacing: 0.01em;
+}

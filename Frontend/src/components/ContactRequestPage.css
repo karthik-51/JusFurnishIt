@@ -1,0 +1,72 @@
+.contact-request-container {
+    margin-top: 48px;
+  }
+  
+  .contact-request-paper {
+    padding: 32px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 8px 32px rgba(31,41,55,0.12);
+  }
+  
+  .contact-request-title {
+    color: #1f2937;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 24px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .contact-request-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .contact-request-input {
+    background: #f3f4f6;
+    border-radius: 6px;
+  }
+  
+  .contact-request-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+  }
+  
+  .contact-request-back {
+    color: #1f2937 !important;
+    font-weight: 600 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  
+  .contact-request-submit {
+    background: linear-gradient(90deg, #99a5b6 0%, #1f2937 100%) !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    border-radius: 6px !important;
+    padding: 6px 28px !important;
+    box-shadow: 0 2px 8px #1f293733 !important;
+    transition: background 0.2s;
+  }
+  
+  .contact-request-submit:hover {
+    background: linear-gradient(90deg, #1f2937 0%, #99a5b6 100%) !important;
+  }
+  
+  .contact-request-feedback {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 6px;
+  }
+  
+  .contact-request-feedback.success {
+    color: green;
+  }
+  
+  .contact-request-feedback.error {
+    color: red;
+  }
+  

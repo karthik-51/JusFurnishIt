@@ -2,27 +2,23 @@ Just FurnishIt
 
 JustFurnishIt is an innovative online platform that connects interior designers with customers seeking personalized home decor solutions.
 
-A full-stack application developed using ReactJS,SpringBoot and mysql.
+Features:
+ ->Online platform where designers can register and showcase their interior design work.
 
-Clone the project: git clone https://github.com/karthik-51/VIRTUSA-JatayuS4-CodeCrusaders.git
+ ->Customers can browse through a variety of design options, filter by category, and view detailed previews.
 
-cd VIRTUSA-JatayuS4-CodeCrusaders
+ ->The platform allows customers to directly connect with designers and book personalized interior services.
 
-How to run Frontend:
+ ->Separate dashboards and functionalities for designers and customers ensure a personalized experience for each user type.
 
-Open new terminal
+ ->This creates a transparent, efficient, and user-friendly experience for both designers and customers.
 
-cd frontend
+ ->Designers can grow their visibility, manage their portfolio, and receive real-time customer inquiries.
+ 
+ ->Customers can leave reviews and ratings, helping others make informed decisions.
 
-npm install
+TechStack:
+  A full-stack application developed using ReactJS,SpringBoot and mysql.
 
-npm run dev
-How to run Backend:
-
-Open new terminal
-
-cd backend
-
-pip install -r requirements.txt 
-
-python run_backend_services.py
+Clone the project: 
+  git clone https://github.com/karthik-51/JusFurnishIt
